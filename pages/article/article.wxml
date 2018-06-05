@@ -1,0 +1,33 @@
+<!--pages/article/article.wxml-->
+<scroll-view class="container" scroll-y="true"  bindscrolltoupper="upper"  bindscrolltolower="lower" upper-threshold="10" lower-threshold="5"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="search" style='display:flex'>
+    <view class="search-ques flex-item">
+      <image src="../../images/search.png"></image>
+      <input placeholder="搜索用户或文章" placeholder-class="search-placeholder"/>
+    </view>
+    <view class="refresh flex-item" bindtap="upper">
+      <image src="../../images/name.png"></image>
+    </view>
+  </view>
+
+  <view class="main">
+    <view class='line'></view>  
+    <block wx:for="{{articlelist}}"  wx:for-index="i" wx:key="articleId">
+      <view class="list-item" bindtap='message' data-articleid='{{item.articleId}}' >
+        <text class="item-title">{{item.title}}</text>
+        <text class="item-content">{{item.body}}</text>
+      </view>
+    </block>
+  </view>
+
+   <!-- 没有更多的时候 -->
+  <view class="more" hidden="{{morehidden}}">
+    <view wx:if="{{morehidden}}">
+      <image src="/images/loading.gif" mode="aspectFill"/>
+    </view>
+    <view wx:else>
+      <text> 没有更多了 </text>
+    </view>
+  </view>
+
+</scroll-view>

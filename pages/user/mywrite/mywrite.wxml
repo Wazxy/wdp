@@ -1,0 +1,16 @@
+<!--pages/user/mywrite/mywrite.wxml-->
+<view class = "container">
+  <view class = "title-input">
+    <label class = "title">标题：</label>
+    <input class = "titleText" auto-focus='true' placeholder = "请输入标题" bindinput = "titleinput" />
+  </view>
+  <view class = "content-input">
+    <label class = "content">正文：</label>
+    <textarea class = "contentText" auto-focus='true'  bindblur="contentinput" auto-height maxlength='-1'/>
+  </view>
+
+  <view class = 'btnview'>
+    <button class='btn' bindtap='write'>上传文章</button>
+  </view>
+
+</view>

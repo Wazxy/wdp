@@ -1,0 +1,32 @@
+<!--pages/article/message.wxml-->
+<scroll-view class="message" scroll-y="true" style="height:{{winHeight-40}}px;">
+	<view class="title">
+		<text class="title-text">{{data.title}}</text>
+	</view>
+
+	<view class="content" scroll-y="true">
+		<text class="content-text">{{data.body}}</text>
+	</view>
+
+	 <!-- 评论 
+	<view class="comments">
+		<text class="comments-title">最新评论</text>
+		<view class="comments-box" wx:if="{{comments.length > 0}}">
+			<view class="comments-list" wx:for="{{comments}}" wx:for-item="item" wx:for-index="i">
+				<view class="comments-avatar"><image class="comments-avatar-img" src="{{item.avatar}}"/></view>
+				<view class="comments-main">
+					<view class="comments-author">
+						<view class="comments-zan">{{item.likes}}</view>
+						<text>{{item.author}}</text>
+					</view>
+					<view class="comments-content">{{item.content}}</view>
+					<view class="comments-data">{{item.times}}</view>
+				</view>
+			</view>
+		</view>
+		  没有评论 
+		<view class="not-comments" wx:else> 暂时还没有评论喔! </view>
+	</view>  -->
+
+
+</scroll-view>

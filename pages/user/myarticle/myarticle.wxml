@@ -1,0 +1,14 @@
+<!--pages/user/myarticle/myarticle.wxml-->
+<scroll-view class="container" scroll-y="true"  bindscrolltoupper="upper"  bindscrolltolower="lower" upper-threshold="10" lower-threshold="5"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  
+  <view class="main">
+    <view class='line'></view>  
+    <block wx:for="{{articlelist}}"  wx:for-index="i" wx:key="articleId">
+      <view class="list-item" bindtap='message' data-articleid='{{item.articleId}}' >
+        <view class="item-title">{{item.title}}</view>
+        <text class="item-content">{{item.body}}</text>
+      </view>
+    </block>
+  </view>
+
+</scroll-view>

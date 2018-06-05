@@ -1,0 +1,60 @@
+/* pages/user/myarticle/revise.wxss */
+.container { 
+  height: 100%;
+  width: 100%; 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0; 
+  background-color: #ffffff
+}
+.title-input{
+  width: 100%; 
+  padding: 25px 20px; 
+  background: #f9f9f9;
+  margin-left: 2rpx;
+}
+.title{
+  font-size:30rpx;
+  color: #cccccc;
+  margin: 15px 15px 15px 10px; 
+}
+.titleText{
+  flex: block; 
+  float: right; 
+  text-align: right;
+  margin-right: 22px; 
+  margin-top: 2px; 
+}
+.content-input{ 
+  width: 100%; 
+  line-height: 1.8em; 
+  margin: 20px 0; 
+  font-size: 14px; 
+  color: #666; 
+}
+.content{
+  font-size:30rpx;
+  margin: 15px 15px 15px 10px; 
+  color: #cccccc; 
+}
+.contentText{
+  width: 100%;
+  padding:20rpx;
+  min-height: 780rpx;
+  box-sizing: border-box;
+}
+.btnview{
+  width: 100%; 
+  height: auto; 
+  background-color: #ffffff; 
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  padding-bottom: 0px; 
+}
+.btn{
+  width: 80%; 
+  margin-top: 15px; 
+  margin-bottom: 15px;
+}

@@ -1,0 +1,22 @@
+/* pages/article/message.wxss */
+.message { 
+  height: 100%;
+  width: 100%; 
+  overflow: hidden; 
+}
+.title{ 
+  padding: 25px 20px; 
+  background: #f9f9f9; 
+}
+.title-text{ 
+  font-size: 18px; 
+  line-height: 25px; 
+  color: #000; 
+  font-weight: 600; 
+}
+.content{ 
+  line-height: 1.8em; 
+  margin: 20px 0; 
+  font-size: 14px; 
+  color: #666; 
+}

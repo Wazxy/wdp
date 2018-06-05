@@ -1,0 +1,38 @@
+/* pages/article/message.wxss */
+.message { 
+  height: 100%;
+  width: 100%; 
+  overflow: hidden; 
+}
+.title{ 
+  padding: 25px 20px; 
+  background: #f9f9f9; 
+}
+.title-text{ 
+  font-size: 18px; 
+  line-height: 25px; 
+  color: #000; 
+  font-weight: 600; 
+}
+.content{ 
+  line-height: 1.8em; 
+  margin: 20px 0; 
+  font-size: 14px; 
+  color: #666; 
+}
+.btnview{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%; 
+  height: auto; 
+  background-color: #ffffff; 
+  margin-top: 0px; 
+  margin-bottom: 0px; 
+  padding-bottom: 0px; 
+}
+.btn{
+  width: 80%; 
+  margin-top: 15px; 
+  margin-bottom: 15px;
+  border-radius: 1px;
+}

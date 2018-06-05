@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/user/user",
+    "pages/user/myarticle/myarticle",
+    "pages/user/myarticle/mymessage",
+    "pages/user/myarticle/revise",
+    "pages/user/mywrite/mywrite",
+    "pages/article/article",
+    "pages/article/message",
+    "pages/question/question"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/question/question",
+        "text": "问题列表",
+        "iconPath": "images/question.png",
+        "selectedIconPath": "images/questionblue.png"
+      },
+      {
+        "pagePath": "pages/article/article",
+        "text": "权威专栏",
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/bookblue.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人页面",
+        "iconPath": "images/person.png",
+        "selectedIconPath": "images/personblue.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

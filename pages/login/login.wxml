@@ -1,0 +1,11 @@
+<view class="mcontainer">
+  <view class="login-icon">
+    <image class='login-img' mode="aspectFit" style='width:200rpx' src='../../images/login.png' ></image>
+  </view>
+  <view class="login-from">
+    <view class="loginBtnView">
+      <button class="loginBtn" style='width:300rpx' type="primary" bindgetuserinfo="onGotUserInfo" open-type='getUserInfo'
+bindgetuserinfo="userInfoHandler">用户授权</button>
+    </view> 
+  </view>
+</view>

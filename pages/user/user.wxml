@@ -1,0 +1,66 @@
+<!--pages/user/user.wxml-->
+<view class = "container user">
+  <view class = "userinfo" style='display:flex'>
+    <view class = "userimage flex-item">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="bindViewTap"></image>
+    </view>
+    <view class = "username flex-item">
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="edit">浏览或修改个人信息</text>
+    </view>
+  </view>
+
+  <view class = "list">
+    <view class = "list-item "style='display:flex'>
+      <view class = "item-image flex-item">
+        <image src = "../../images/myquestion1.png" style = "width: 48rpx;height: 48rpx;"></image>
+      </view>
+      <view class = "item-word flex-item">
+        <text>我的问题</text>
+      </view>
+    </view>
+    <view class = "list-item "style='display:flex' bindtap='article'>
+      <view class = "item-image flex-item">
+        <image src = "../../images/myarticle.png" style = "width: 38rpx;height: 38rpx;"></image>
+      </view>
+      <view class = "item-word flex-item">
+        <text>我的文章</text>
+      </view>
+    </view>
+    <view class = "list-item "style='display:flex'>
+      <view class = "item-image flex-item">
+        <image src = "../../images/mybackup.png" style = "width: 45rpx;height: 45rpx;"></image>
+      </view>
+      <view class = "item-word flex-item">
+        <text>浏览记录</text>
+      </view>
+    </view>
+    <view class = "list-item "style='display:flex'>
+      <view class = "item-image flex-item">
+        <image src = "../../images/mycollection.png" style = "width: 50rpx;height: 50rpx;"></image>
+      </view>
+      <view class = "item-word flex-item">
+        <text>我的收藏</text>
+      </view>
+    </view>
+    <view class = "list-item "style='display:flex'>
+      <view class = "item-image flex-item">
+        <image src = "../../images/myquiz.png" style = "width: 46rpx;height: 46rpx;"></image>
+      </view>
+      <view class = "item-word flex-item">
+        <text>我要提问题</text>
+      </view>
+    </view>
+    <view class = "list-item "style='display:flex' bindtap='write'>
+      <view class = "item-image flex-item">
+        <image src = "../../images/mywrite.png" style = "width: 45rpx;height: 45rpx;"></image>
+      </view>
+      <view class = "item-word flex-item">
+        <text>我要写文章</text>
+      </view>
+    </view>
+    
+
+  </view>  
+
+</view>

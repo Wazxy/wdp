@@ -1,0 +1,16 @@
+<!--pages/user/myarticle/revise.wxml-->
+<view class = "container">
+  <view class = "title-input">
+    <label class = "title">标题：</label>
+    <input class = "titleText" auto-focus='true' value="{{article.title}}" bindinput = "titleinput" />
+  </view>
+  <view class = "content-input">
+    <label class = "content">正文：</label>
+    <textarea class = "contentText" auto-focus='true'  bindblur="contentinput" value="{{article.body}}" auto-height maxlength='-1'/>
+  </view>
+
+  <view class = 'btnview'>
+    <button class='btn' bindtap='xiugai'>修改</button>
+  </view>
+
+</view>
